@@ -2,188 +2,210 @@
 
 body {
   font-family: 'Inter', sans-serif;
-  max-width: 1440px;
+  max-width: 2560px;
 }
 p,
 a {
   color: #667085;
 }
+
+/* ----header---- */
 .header {
   padding: 1.8rem 8rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-.header .logo {
-  display: flex;
-  align-items: center;
-}
-
-.header .nome-logo {
-  font-size: 1.8rem;
-  margin-left: 0.8rem;
-  color: #3a404e;
-}
 
 .header .nav {
   display: flex;
+  width: 128rem;
+  padding: 0px 3.2rem;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  display: flex;
+  width: 14.8rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+  flex-shrink: 0;
+}
+.header .logo img {
+  width: 2.7rem;
+}
+.header .nome-logo {
+  color: #3a404e;
+  font-size: 1.8rem;
 }
 .header ul {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
+  gap: 3.2rem;
+  font-size: 1.6rem;
 }
 
 .header ul li {
-  font-size: 1.6rem;
-  margin-left: 3.2rem;
+  display: flex;
+  padding: 1rem 1.8rem;
+  justify-content: center;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.header ul .destaque-menu {
   border-radius: 0.8rem;
-  padding: 1rem;
+  border: 1px solid #8e2424;
+  background: #8e2424;
+
+  box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
 }
 
-.header .logar-registrar .destaque-menu {
-  background-color: #8e2424;
-}
-
-.header .logar-registrar .destaque-menu a {
+.header .destaque-menu a {
   color: #fff;
 }
 
-/* ---------.main--------- */
+/* ----main---- */
 .main {
   padding: 8rem;
 }
-.main .section-sobre-nos h3:nth-child(1) {
+/*  */
+.section-sobre-nos h3:nth-child(1) {
   color: #8e2424;
   text-align: center;
 }
-.main .section-sobre-nos .texto-sobre-nos {
+.section-sobre-nos .texto-sobre-nos {
   margin-bottom: 9.6rem;
 }
-
-.main .section-sobre-nos .texto-sobre-nos h1 {
+.section-sobre-nos .texto-sobre-nos h1 {
   margin: 2.4rem 0;
   font-size: 4.8rem;
   text-align: center;
 }
-.main .section-sobre-nos .texto-sobre-nos p {
+.section-sobre-nos .texto-sobre-nos p {
   font-size: 2rem;
   text-align: center;
   margin: auto;
   width: 796px;
 }
 
-/* ---------section sobre-nos--------- */
-.main .section-sobre-nos .conquistas {
-  margin: auto;
+/* ----section-sobre-nos---- */
+.section-sobre-nos .conquistas {
   display: grid;
   grid-template-areas: 'projetos colaboradores downloads review';
   gap: 0 3.2rem;
+  margin: auto;
 }
 
-.main .section-sobre-nos .conquistas span {
+.section-sobre-nos .conquistas span {
   font-size: 6rem;
   color: #8e2424;
 }
-.main .section-sobre-nos .conquistas p {
+.section-sobre-nos .conquistas p {
   font-size: 1.6rem;
   margin-top: 0.8rem;
 }
 
-.main .section-sobre-nos .conquistas .projetos-concluidos,
-.main .section-sobre-nos .conquistas .colaboradores,
-.main .section-sobre-nos .conquistas .downloads,
-.main .section-sobre-nos .conquistas .review {
+.section-sobre-nos .conquistas .projetos-concluidos,
+.section-sobre-nos .conquistas .colaboradores,
+.section-sobre-nos .conquistas .downloads,
+.section-sobre-nos .conquistas .review {
   width: 28rem;
   margin: auto;
 }
 
-.main .section-sobre-nos .conquistas .projetos-concluidos {
+.section-sobre-nos .conquistas .projetos-concluidos {
   grid-area: projetos;
 }
 
-.main .section-sobre-nos .conquistas .colaboradores {
+.section-sobre-nos .conquistas .colaboradores {
   grid-area: colaboradores;
 }
-.main .section-sobre-nos .conquistas .downloads {
+.section-sobre-nos .conquistas .downloads {
   grid-area: downloads;
 }
-.main .section-sobre-nos .conquistas .review {
+.section-sobre-nos .conquistas .review {
   grid-area: review;
 }
 
-/* ---------section-vagas--------- */
-.main .section-vagas {
+/* ----section-vagas---- */
+.section-vagas {
   margin-top: 9.6rem;
 }
-.main .section-vagas h3 {
+.section-vagas h3 {
   color: #8e2424;
   text-align: center;
 }
 
-.main .section-vagas h2 {
+.section-vagas h2 {
   font-size: 3.6rem;
   text-align: center;
   margin: 2rem 0;
 }
 
-.main .section-vagas p {
+.section-vagas p {
   font-size: 2rem;
   text-align: center;
   margin-bottom: 6.4rem;
 }
-.main .section-vagas .image-vagas img {
+.section-vagas .image-vagas img {
   border-radius: 2rem;
 }
 
-.main .section-vagas .vagas {
+.section-vagas .vagas {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-top: 6.4rem;
 }
-
-.main .vagas-disponiveis-design h3 {
+.section-vagas .vagas h4 {
+  text-align: start;
+}
+/* ----section-vagas-design---- */
+.vagas-disponiveis-design h3 {
   font-size: 2rem;
   color: #000;
   text-align: left;
   margin-bottom: 3.2rem;
 }
-.main .vagas-disponiveis-design .container-vagas-design {
+.vagas-disponiveis-design .container-vagas-design {
   border: 1px solid #eaecf0;
   padding: 2.4rem;
   border-radius: 1.6rem;
   width: 76.8rem;
 }
-.main .vagas-disponiveis-design .container-vagas-design {
+.vagas-disponiveis-design .container-vagas-design {
   margin-bottom: 2.4rem;
 }
-.main .vagas-disponiveis-design .container-vagas-design h4 {
+.vagas-disponiveis-design .container-vagas-design h4 {
   font-size: 1.8rem;
 }
 
-.main .vagas-disponiveis-design .container-vagas-design ul {
+.vagas-disponiveis-design .container-vagas-design ul {
   display: flex;
   gap: 0 2.4rem;
   margin-top: 3.2rem;
 }
 
-.main .vagas-disponiveis-design .container-vagas-design li {
+.vagas-disponiveis-design .container-vagas-design li {
   font-size: 1.6rem;
 }
 
-/*----Vagas-soft----*/
-.main .vagas-disponiveis-software {
+/* ----section-vagas-software---- */
+.vagas-disponiveis-software {
   margin-top: 6.4rem;
 }
 
-.main .vagas-disponiveis-software h3 {
+.vagas-disponiveis-software h3 {
   font-size: 2rem;
   color: #000;
   text-align: left;
   margin-bottom: 3.2rem;
 }
-.main .vagas-disponiveis-software .container-vagas-software {
+.vagas-disponiveis-software .container-vagas-software {
   border: 1px solid #eaecf0;
   border-radius: 1.6rem;
   padding: 2.4rem;
@@ -191,21 +213,21 @@ a {
   width: 76.8rem;
 }
 
-.main .vagas-disponiveis-software .container-vagas-software h4 {
+.vagas-disponiveis-software .container-vagas-software h4 {
   font-size: 1.8rem;
 }
 
-.main .vagas-disponiveis-software .container-vagas-software ul {
+.vagas-disponiveis-software .container-vagas-software ul {
   display: flex;
   gap: 0 2.4rem;
   margin-top: 3.2rem;
 }
 
-.main .vagas-disponiveis-software .container-vagas-software li {
+.vagas-disponiveis-software .container-vagas-software li {
   font-size: 1.6rem;
 }
 
-/* -----section-colaboradores--- */
+/* ----section-vagas-software---- */
 
 .section-colaborador {
   margin: 9.6rem 8rem;
@@ -246,7 +268,7 @@ h4 {
   font-size: 1.4rem;
   color: #667085;
 }
-
+/* ----footer---- */
 footer {
   padding: 9.6rem 0;
 }
@@ -255,78 +277,60 @@ footer header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: 4rem;
   align-self: stretch;
 }
 footer header h2 {
-  color: var(--gray-900, #101828);
+  color:#101828;
   text-align: center;
 
-  /* Display md/Semibold */
-  font-family: Inter;
-  font-size: 36px;
-  font-style: normal;
+  font-size: 3.6rem;
   font-weight: 600;
-  line-height: 44px; /* 122.222% */
+  line-height: 4.4rem; 
   letter-spacing: -0.72px;
 }
 
 footer header p {
-  color: var(--gray-500, #667085);
+  color: #667085;
   text-align: center;
-
-  /* Text xl/Normal */
-  font-family: Inter;
-  font-size: 20px;
-  font-style: normal;
+  font-size: 2rem;
   font-weight: 400;
-  line-height: 30px; /* 150% */
+  line-height: 3rem;
 }
 
 footer header address form {
   display: flex;
   align-items: flex-start;
-  gap: 16px;
+  gap: 1.6rem;
 }
 
 footer header address form input {
   display: flex;
-  padding: 12px 14px 12px 16px;
+  padding: 1.2rem 1.4rem 1.2rem 1.6rem;
   align-items: center;
-  gap: 8px;
+  gap: 0.8rem;
   align-self: stretch;
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
+  font-size: 1.6rem;
   font-weight: 400;
-  line-height: 24px; /* 150% */
-
-  border-radius: 8px;
+  line-height: 2.4rem;
+  border-radius: 0.8rem;
   border: 1px solid #d0d5dd;
-  background: var(--base-white, #fff);
+  background: #fff;
 
-  /* Shadow/xs */
+  /* Shadow*/
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
 }
 footer header address form button {
   display: flex;
-  padding: 12px 20px;
+  padding: 1.2rem 2rem;
   justify-content: center;
   align-items: center;
-  gap: 8px;
-  border-radius: 8px;
+  gap: 0.8rem;
+  border-radius: 0.8rem;
   border: 1px solid #8e2424;
   background: #8e2424;
-
-  color: var(--base-white, #fff);
-
-  /* Text md/Medium */
-  font-family: Inter;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
-  line-height: 24px; /* 150% */
-
-  /* Shadow/xs */
+  color:#fff;
+  font-size: 1.6rem;
+  line-height: 2.4rem; 
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
 }
