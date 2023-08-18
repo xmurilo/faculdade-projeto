@@ -1,8 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
-
+/* ----Geral--- */
 body {
   font-family: 'Inter', sans-serif;
   max-width: 2560px;
+}
+section, footer {
+  padding: 9.6rem;
 }
 p,
 a {
@@ -37,7 +40,7 @@ a {
   width: 2.7rem;
 }
 .header .nome-logo {
-  color: #3a404e;
+  color: #3A404E;
   font-size: 1.8rem;
 }
 .header ul {
@@ -77,8 +80,9 @@ a {
   text-align: center;
 }
 .section-sobre-nos .texto-sobre-nos {
-  margin-bottom: 9.6rem;
+  padding-top: 3.6rem;
 }
+
 .section-sobre-nos .texto-sobre-nos h1 {
   margin: 2.4rem 0;
   font-size: 4.8rem;
@@ -97,6 +101,7 @@ a {
   grid-template-areas: 'projetos colaboradores downloads review';
   gap: 0 3.2rem;
   margin: auto;
+  padding-top: 10.7rem;
 }
 
 .section-sobre-nos .conquistas span {
@@ -131,9 +136,9 @@ a {
 }
 
 /* ----section-vagas---- */
-.section-vagas {
+/* .section-vagas {
   margin-top: 9.6rem;
-}
+} */
 .section-vagas h3 {
   color: #8e2424;
   text-align: center;
@@ -230,7 +235,7 @@ a {
 /* ----section-vagas-software---- */
 
 .section-colaborador {
-  margin: 9.6rem 8rem;
+  /* margin: 9.6rem 8rem; */
   background-color: rgb(253, 248, 248);
   padding: 6.4rem;
 }
@@ -269,9 +274,7 @@ h4 {
   color: #667085;
 }
 /* ----footer---- */
-footer {
-  padding: 9.6rem 0;
-}
+
 
 footer header {
   display: flex;
@@ -317,7 +320,6 @@ footer header address form input {
   border: 1px solid #d0d5dd;
   background: #fff;
 
-  /* Shadow*/
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
 }
 footer header address form button {
@@ -333,4 +335,11 @@ footer header address form button {
   font-size: 1.6rem;
   line-height: 2.4rem; 
   box-shadow: 0px 1px 2px 0px rgba(16, 24, 40, 0.05);
+  cursor: pointer;
+}
+
+footer .direitos-autorais {
+  color: #98A2B3;
+  text-align: center;
+  margin-top: 3.2rem;
 }
